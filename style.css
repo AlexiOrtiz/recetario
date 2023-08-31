@@ -42,3 +42,67 @@ img {
     margin: 0 auto;
     padding: 20px;
 }
+
+* {
+    font-size: 1rem!important;
+}
+p {
+    font-size: 16px;
+}
+a:link{
+    text-decoration-line: none;
+}
+ol li:hover, ol li a:hover {
+    color: red;
+}
+.title{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    background: green;
+    opacity: 75%;
+    font-size: 2rem!important;
+}
+.sub-title{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    background: red;
+    opacity: 75%;
+    font-size: 1.3rem!important;
+    /* margin: 5rem; */
+}
+.items {
+    font-weight: bold;
+}
+img{
+    border: 5px solid black;
+    border-radius: 5px;
+}
+.div-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-width: 100%;
+}
+img {
+    max-height: 300px;
+}
+
+#principal-title {
+    background-image: url("https://s1.ppllstatics.com/diariovasco/www/multimedia/201908/20/media/cortadas/comida-gastronomia-platos-italia-kUrE-RXT3H6k8R30qeWZiL4ovvCM-1248x770@Diario%20Vasco.jpg");
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    background-position: center; /* Centrar la imagen en el contenedor */
+    width: 100%;
+}
+#secondary-title>h2 {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    opacity: 75%;
+    font-size: 1.5rem!important;
+}
+.receta {
+    margin: 2rem;
+}
