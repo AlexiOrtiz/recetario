@@ -1,0 +1,44 @@
+/* Cambiar el color de fondo de la página */
+body {
+    background-color: #e4f6a0;
+}
+
+/* Fuente de todo el texto es Tahoma */
+body {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+/* Todos los párrafos a tamaño de texto 16 */
+p {
+    font-size: 16px;
+}
+
+/* Eliminar el subrayado a los vínculos */
+a {
+    text-decoration: none;
+}
+
+/* Cambiar el texto de los títulos de las recetas a Italic */
+h2 {
+    font-style: italic;
+}
+
+/* Cambiar los elementos de la lista de ingredientes a Bold */
+ul {
+    font-weight: bold;
+}
+
+/* Agregar un recuadro a las imágenes */
+img {
+    border: 2px solid #000000;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Alinear el contenido del centro */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
