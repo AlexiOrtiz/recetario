@@ -115,3 +115,7 @@ img {
     background-color: #f44336 !important; /* Cambia el color de fondo activo como desees */
     color: white !important; /* Cambia el color de texto activo como desees */
 }
+
+.hidden {
+    display: none;
+}

@@ -26,7 +26,7 @@
         <h2>Contenido</h1>
     </div>
     
-    <div class="w3-row-padding w3-padding-16">
+    <div class="w3-row-padding w3-padding-16 hidden">
         <a href="#pizzas" class="w3-col l4 m6 w3-margin-bottom">
             <div class="w3-card">
                 <img class="w3-hover-opacity" src="https://images.hola.com/imagenes/cocina/recetas/20220208204252/pizza-pepperoni-mozzarella/1-48-890/pepperoni-pizza-abob-t.jpg?tx=w_680" alt="Imagen de Pizza" style="width:100%">
@@ -89,505 +89,505 @@
     </div>
 
     <div class="w3-container">
-        <h1>RECETAS DE COMIDAS</h1>
-        <h2>Recetas disponibles</h2>
         <div class="w3-bar w3-black" id="recipeTabs">
             <button class="w3-bar-item w3-button tablink" onclick="showRecipe('pizza', this)">Pizza</button>
             <button class="w3-bar-item w3-button tablink" onclick="showRecipe('ravioles', this)">Ravioles</button>
             <button class="w3-bar-item w3-button tablink" onclick="showRecipe('sopa-paraguaya', this)">Sopa Paraguaya</button>
-            <button class="w3-bar-item w3-button tablink" onclick="showRecipe('recipe_kimchi', this)">Kimchi</button>
+            <button class="w3-bar-item w3-button tablink" onclick="showRecipe('recipe-kimchi', this)">Kimchi</button>
             <button class="w3-bar-item w3-button tablink" onclick="showRecipe('tteokbokki', this)">Tteokbokki</button>
         </div>
         
         <div class="w3-container w3-border" id="recipeContent">
             <!-- Contenido de las recetas se mostrará aquí -->
-        </div>
-    </div>
 
-    <div class="w3-container w3-row-padding"> <!-- Agregar un contenedor y clases para el diseño responsive -->
-        <div class="w3-col m12 w3-center"> <!-- Utilizar columnas para el diseño responsive -->
-            
-            <div class="recipe-tab" id="pizza">
-                <h2 class=" w3-italic w3-padding w3-card-4 w3-red w3-bold w3-center">Pizza tradicional de Pepperoni</h2>
-                <div class="w3-row">
-                    <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black w3-bold">
-                        <h3> Ingredientes </h3>
-                    </div>
-                </div>
-                <div class="w3-row">
-                    <div class="w3-col m6 w3-center">
-                        <img src="https://2trendies.com/hero/2023/04/pizzapepperoni.jpg?width=1200&aspect_ratio=16:9" alt="Pizza de Pepperoni" class="w3-image w3-margin w3-animate-opacity">
-                    </div>
-                    <div class="w3-col m6 w3-center">
-                        <div class="w3-margin">
-                            <table class="w3-table w3-bordered w3-hoverable">
-                                <thead>
-                                    <tr class="w3-red">
-                                        <th>Ingredientes</th>
-                                        <th>Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Masa para pizza </td>
-                                        <td>1 unidad</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Salsa de tomate </td>
-                                        <td>1/2 taza</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Queso mozzarella </td>
-                                        <td>1 taza</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pepperoni </td>
-                                        <td>Al gusto</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Orégano </td>
-                                        <td>Al gusto</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-row">
-                    <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
-                        <h3> Preparación </h3>
-                    </div>
-                    <div class="w3-col m12 ">
-                        <ul class="w3-ul"> <!-- Utilizar la clase w3-ul para la lista -->
-                            <li>1. Extiende la masa para pizza en una bandeja.</li>
-                            <li>2. Unta salsa de tomate sobre la masa.</li>
-                            <li>3. Agrega queso mozzarella y pepperoni sobre la salsa.</li>
-                            <li>4. Espolvorea orégano al gusto.</li>
-                            <li>5. Hornea a temperatura recomendada hasta que la masa esté dorada y el queso derretido.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <!-- ===================== RECETA DE RAVIOLES =========================-->
-        <div class="w3-col m12 w3-center"> <!-- Utilizar columnas para el diseño responsive -->
-            <div class="recipe-tab" id="ravioles">
-                <h2 class=" w3-italic w3-padding w3-card-4 w3-green w3-bold w3-center">Ravioles de Jamón y Queso</h2>
-                <div class="w3-row">
-                    <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black w3-bold">
-                        <h3> Ingredientes </h3>
-                    </div>
-                </div>
-                <div class="w3-row">
-                    <div class="w3-col m6 w3-center">
-                        <img src="https://infoagro.com.ar/wp-content/uploads/2021/07/Ravioles.jpg" alt="Ravioles de Jamón y Queso" class="w3-image w3-margin w3-animate-opacity">
-                    </div>
-                    <div class="w3-col m6 w3-center">
-                        <div class="w3-margin">
-                            <table class="w3-table w3-bordered w3-hoverable">
-                                <thead>
-                                    <tr class="w3-green">
-                                        <th>Ingredientes</th>
-                                        <th>Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Ravioles</td>
-                                        <td>250g</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jamón </td>
-                                        <td>100g</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Queso </td>
-                                        <td>100g</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Salsa de tomate o crema  </td>
-                                        <td>1 taza</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-row">
-                    <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
-                        <h3> Preparación </h3>
-                    </div>
-                    <div class="w3-col m12 ">
-                        <ul class="w3-ul"> <!-- Utilizar la clase w3-ul para la lista -->
-                            <li>1. Cocina los ravioles según las instrucciones del paquete.</li>
-                            <li>2. Calienta la salsa de tomate o crema en una sartén.</li>
-                            <li>3. Agrega los ravioles cocidos a la salsa y mezcla suavemente.</li>
-                            <li>4. Agrega jamón y queso a la mezcla y revuelve hasta que el queso se derrita.</li>
-                            <li>5. Sirve caliente.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>    
-        </div>
-            </div>    
-        </div>
-        <!-- ========================= RECETA SOPA PARAGUAYA ============================== -->
-        <div class="w3-col m12 w3-center"> <!-- Utilizar columnas para el diseño responsive -->
-            <div class="recipe-tab" id="sopa-paraguaya">
-                <h2 class=" w3-italic w3-padding w3-card-4 w3-orange w3-bold w3-center">Sopa Paraguaya</h2>
-                <div class="w3-row">
-                    <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black w3-bold">
-                        <h3> Ingredientes </h3>
-                    </div>
-                </div>
-                <div class="w3-row">
-                    <div class="w3-col m6 w3-center">
-                        <img src="https://www.abc.com.py/resizer/2_mg0q98ARb2vLbvRKXpGddjnVs=/fit-in/770x495/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/abccolor/CZDFE2LPZFCMHA2AB7Q33LZ2QE.jpg" alt="Sopa Paraguaya" class="w3-image w3-margin w3-animate-opacity">
-                    </div>
-                    <div class="w3-col m6 w3-center">
-                        <div class="w3-margin">
-                            <table class="w3-table w3-bordered w3-hoverable">
-                                <thead>
-                                    <tr class="w3-orange">
-                                        <th>Ingredientes</th>
-                                        <th>Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Harina de maíz </td>
-                                        <td>250g</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Queso paraguayo</td>
-                                        <td>200g</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cebolla </td>
-                                        <td> 1 unidad</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Leche</td>
-                                        <td>1 taza</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Huevos </td>
-                                        <td>2 unidades</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Manteca </td>
-                                        <td>50g</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sal y pimienta </td>
-                                        <td>A gusto</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+            <div class="w3-container w3-row-padding"> <!-- Agregar un contenedor y clases para el diseño responsive -->
+                <div id="div-pizza" class="w3-col m12 w3-center tabcontent"> <!-- Utilizar columnas para el diseño responsive -->
                     
-                <div class="w3-row">
-                    <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
-                        <h3> Preparación </h3>
-                    </div>
-                    <div class="w3-col m12 ">
-                        <ul class="w3-ul"> <!-- Utilizar la clase w3-ul para la lista -->
-                            <li>1. Precalienta el horno a 180°C (350°F).</li>
-                            <li>2. En una sartén, derrite la manteca y saltea la cebolla picada hasta que esté dorada.</li>
-                            <li>3. En un bol grande, mezcla la harina de maíz con la leche hasta obtener una masa homogénea.</li>
-                            <li>4. Agrega los huevos y continúa mezclando.</li>
-                            <li>5. Añade la cebolla salteada y el queso paraguayo rallado a la mezcla. Revuelve bien.</li>
-                            <li>6. Agrega sal y pimienta al gusto.</li>
-                            <li>7. Vierte la mezcla en un molde previamente engrasado.</li>
-                            <li>8. Hornea durante aproximadamente 40-45 minutos o hasta que esté dorada y firme.</li>
-                            <li>9. Deja enfriar un poco antes de cortarla en porciones y servir.</li>
-                        </ul>
-                    </div>
+                    <div class="recipe-tab" id="pizza">
+                        <h2 class=" w3-italic w3-padding w3-card-4 w3-red w3-bold w3-center">Pizza tradicional de Pepperoni</h2>
+                        <div class="w3-row">
+                            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black w3-bold">
+                                <h3> Ingredientes </h3>
+                            </div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-col m6 w3-center">
+                                <img src="https://2trendies.com/hero/2023/04/pizzapepperoni.jpg?width=1200&aspect_ratio=16:9" alt="Pizza de Pepperoni" class="w3-image w3-margin w3-animate-opacity">
+                            </div>
+                            <div class="w3-col m6 w3-center">
+                                <div class="w3-margin">
+                                    <table class="w3-table w3-bordered w3-hoverable">
+                                        <thead>
+                                            <tr class="w3-red">
+                                                <th>Ingredientes</th>
+                                                <th>Cantidad</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Masa para pizza </td>
+                                                <td>1 unidad</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Salsa de tomate </td>
+                                                <td>1/2 taza</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Queso mozzarella </td>
+                                                <td>1 taza</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pepperoni </td>
+                                                <td>Al gusto</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Orégano </td>
+                                                <td>Al gusto</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
+                                <h3> Preparación </h3>
+                            </div>
+                            <div class="w3-col m12 ">
+                                <ul class="w3-ul"> <!-- Utilizar la clase w3-ul para la lista -->
+                                    <li>1. Extiende la masa para pizza en una bandeja.</li>
+                                    <li>2. Unta salsa de tomate sobre la masa.</li>
+                                    <li>3. Agrega queso mozzarella y pepperoni sobre la salsa.</li>
+                                    <li>4. Espolvorea orégano al gusto.</li>
+                                    <li>5. Hornea a temperatura recomendada hasta que la masa esté dorada y el queso derretido.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
-            </div>    
-        </div>
-        
-    </div>
-    <!-- ======================= RECETA DE KIMCHI ============================= -->
-    <div class="w3-container w3-row-padding recipe-container" id="recipe_kimchi">
-        <div class="w3-row">
-            <div class="w3-col m12 w3-center">
-            
-                <h2 class=" w3-italic w3-padding w3-card-4 w3-red w3-bold w3-center"><a name="receta1"> Kimchi </a></h2>
-
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black w3-bold">
-                <h3> Ingredientes </h3>
-            </div>
-        </div>
-
-        <div class="w3-row">
-            <div class="w3-col m6 w3-center">
-                <img src="https://assets.stickpng.com/images/5bbf0761dbc29e02dd82784a.png" class="w3-image w3-margin w3-animate-opacity" />
-
-                <p class="w3-padding w3-card-4 w3-lightgray">
-                    Dato curioso: La fermentación del kimchi puede generar una actividad muy baja pero detectable en los detectores 
-                    sísmicos utilizados para monitorear pruebas nucleares. 
-                    En ocasiones, los científicos encargados de supervisar posibles pruebas nucleares han tenido que aprender a distinguir 
-                    entre las señales sísmicas generadas por actividad humana y las provocadas por la fermentación natural del kimchi en 
-                    bodegas subterráneas.
-                </p>
-            </div>
-        
-            <div class="w3-col m6 w3-center">
-                <div class="w3-margin">
-                    <table class="w3-table w3-bordered w3-hoverable">
-                        <thead>
-                            <tr class="w3-red">
-                                <th>Ingredientes</th>
-                                <th>Cantidad</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Col china grande (también conocida como bok choy o napa)</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Taza de sal</td>
-                                <td>1/4</td>
-                            </tr>
-                            <tr>
-                                <td>Tazas de agua fría</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>Cucharada de jengibre rallado</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Cucharada de ajo picado</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Cucharada de azúcar</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Cucharadas de pasta de pimiento rojo (gochujang) o al gusto</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Cebollas verdes, cortadas en trozos de 2 pulgadas</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Zanahorias, cortadas en tiras finas</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Otras opciones para añadir al kimchi: rábanos, cebolla, ajo verde, etc.</td>
-                                <td>Al gusto</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- ===================== RECETA DE RAVIOLES =========================-->
+                <div id="div-ravioles" class="w3-col m12 w3-center tabcontent"> <!-- Utilizar columnas para el diseño responsive -->
+                    <div class="recipe-tab" id="ravioles">
+                        <h2 class=" w3-italic w3-padding w3-card-4 w3-green w3-bold w3-center">Ravioles de Jamón y Queso</h2>
+                        <div class="w3-row">
+                            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black w3-bold">
+                                <h3> Ingredientes </h3>
+                            </div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-col m6 w3-center">
+                                <img src="https://infoagro.com.ar/wp-content/uploads/2021/07/Ravioles.jpg" alt="Ravioles de Jamón y Queso" class="w3-image w3-margin w3-animate-opacity">
+                            </div>
+                            <div class="w3-col m6 w3-center">
+                                <div class="w3-margin">
+                                    <table class="w3-table w3-bordered w3-hoverable">
+                                        <thead>
+                                            <tr class="w3-green">
+                                                <th>Ingredientes</th>
+                                                <th>Cantidad</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Ravioles</td>
+                                                <td>250g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jamón </td>
+                                                <td>100g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Queso </td>
+                                                <td>100g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Salsa de tomate o crema  </td>
+                                                <td>1 taza</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
+                                <h3> Preparación </h3>
+                            </div>
+                            <div class="w3-col m12 ">
+                                <ul class="w3-ul"> <!-- Utilizar la clase w3-ul para la lista -->
+                                    <li>1. Cocina los ravioles según las instrucciones del paquete.</li>
+                                    <li>2. Calienta la salsa de tomate o crema en una sartén.</li>
+                                    <li>3. Agrega los ravioles cocidos a la salsa y mezcla suavemente.</li>
+                                    <li>4. Agrega jamón y queso a la mezcla y revuelve hasta que el queso se derrita.</li>
+                                    <li>5. Sirve caliente.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
-                <h3> Preparación </h3>
-            </div>
-            <div class="w3-col m12 ">
-            
-                <div class="w3-ul">
-                    <div class="w3-li "><br>
-                        1- Lava bien la col china y córtala en trozos grandes. 
-                        Disuelve 1/4 de taza de sal en 4 tazas de agua fría en un recipiente grande. 
-                        Sumerge los trozos de col en la salmuera y déjalos reposar durante aproximadamente 1-2 horas, volteándolos ocasionalmente.
+                    </div>    
+                </div>
+                <!-- ========================= RECETA SOPA PARAGUAYA ============================== -->
+                <div id="div-sopa-paraguaya" class="w3-col m12 w3-center tabcontent"> <!-- Utilizar columnas para el diseño responsive -->
+                    <div class="recipe-tab" id="sopa-paraguaya">
+                        <h2 class=" w3-italic w3-padding w3-card-4 w3-orange w3-bold w3-center">Sopa Paraguaya</h2>
+                        <div class="w3-row">
+                            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black w3-bold">
+                                <h3> Ingredientes </h3>
+                            </div>
+                        </div>
+                        <div class="w3-row">
+                            <div class="w3-col m6 w3-center">
+                                <img src="https://www.abc.com.py/resizer/2_mg0q98ARb2vLbvRKXpGddjnVs=/fit-in/770x495/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/abccolor/CZDFE2LPZFCMHA2AB7Q33LZ2QE.jpg" alt="Sopa Paraguaya" class="w3-image w3-margin w3-animate-opacity">
+                            </div>
+                            <div class="w3-col m6 w3-center">
+                                <div class="w3-margin">
+                                    <table class="w3-table w3-bordered w3-hoverable">
+                                        <thead>
+                                            <tr class="w3-orange">
+                                                <th>Ingredientes</th>
+                                                <th>Cantidad</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Harina de maíz </td>
+                                                <td>250g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Queso paraguayo</td>
+                                                <td>200g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cebolla </td>
+                                                <td> 1 unidad</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Leche</td>
+                                                <td>1 taza</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Huevos </td>
+                                                <td>2 unidades</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Manteca </td>
+                                                <td>50g</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sal y pimienta </td>
+                                                <td>A gusto</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="w3-row">
+                            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
+                                <h3> Preparación </h3>
+                            </div>
+                            <div class="w3-col m12 ">
+                                <ul class="w3-ul"> <!-- Utilizar la clase w3-ul para la lista -->
+                                    <li>1. Precalienta el horno a 180°C (350°F).</li>
+                                    <li>2. En una sartén, derrite la manteca y saltea la cebolla picada hasta que esté dorada.</li>
+                                    <li>3. En un bol grande, mezcla la harina de maíz con la leche hasta obtener una masa homogénea.</li>
+                                    <li>4. Agrega los huevos y continúa mezclando.</li>
+                                    <li>5. Añade la cebolla salteada y el queso paraguayo rallado a la mezcla. Revuelve bien.</li>
+                                    <li>6. Agrega sal y pimienta al gusto.</li>
+                                    <li>7. Vierte la mezcla en un molde previamente engrasado.</li>
+                                    <li>8. Hornea durante aproximadamente 40-45 minutos o hasta que esté dorada y firme.</li>
+                                    <li>9. Deja enfriar un poco antes de cortarla en porciones y servir.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+        
+                <!-- ======================= RECETA DE KIMCHI ============================= -->
+                <div id="div-recipe-kimchi" class="w3-col m12 w3-center tabcontent">
+                    <div class="w3-row">
+                        <div class="w3-col m12 w3-center">
+                        
+                            <h2 class=" w3-italic w3-padding w3-card-4 w3-red w3-bold w3-center"><a name="receta1"> Kimchi </a></h2>
+        
+                        </div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black w3-bold">
+                            <h3> Ingredientes </h3>
+                        </div>
+                    </div>
+        
+                    <div class="w3-row">
+                        <div class="w3-col m6 w3-center">
+                            <img src="https://assets.stickpng.com/images/5bbf0761dbc29e02dd82784a.png" class="w3-image w3-margin w3-animate-opacity" />
+        
+                            <p class="w3-padding w3-card-4 w3-lightgray">
+                                Dato curioso: La fermentación del kimchi puede generar una actividad muy baja pero detectable en los detectores 
+                                sísmicos utilizados para monitorear pruebas nucleares. 
+                                En ocasiones, los científicos encargados de supervisar posibles pruebas nucleares han tenido que aprender a distinguir 
+                                entre las señales sísmicas generadas por actividad humana y las provocadas por la fermentación natural del kimchi en 
+                                bodegas subterráneas.
+                            </p>
+                        </div>
                     
+                        <div class="w3-col m6 w3-center">
+                            <div class="w3-margin">
+                                <table class="w3-table w3-bordered w3-hoverable">
+                                    <thead>
+                                        <tr class="w3-red">
+                                            <th>Ingredientes</th>
+                                            <th>Cantidad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Col china grande (también conocida como bok choy o napa)</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Taza de sal</td>
+                                            <td>1/4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tazas de agua fría</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cucharada de jengibre rallado</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cucharada de ajo picado</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cucharada de azúcar</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cucharadas de pasta de pimiento rojo (gochujang) o al gusto</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cebollas verdes, cortadas en trozos de 2 pulgadas</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zanahorias, cortadas en tiras finas</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Otras opciones para añadir al kimchi: rábanos, cebolla, ajo verde, etc.</td>
+                                            <td>Al gusto</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="w3-li ">
-                        2- Mientras tanto, prepara la pasta de condimentos. 
-                        Mezcla el jengibre rallado, el ajo picado, el azúcar y la pasta de pimiento rojo (gochugaru) en un tazón pequeño. 
-                        Ajusta la cantidad de pasta de pimiento rojo según tu preferencia de picante.
+                    <div class="w3-row">
+                        <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
+                            <h3> Preparación </h3>
+                        </div>
+                        <div class="w3-col m12 ">
+                        
+                            <div class="w3-ul">
+                                <div class="w3-li "><br>
+                                    1- Lava bien la col china y córtala en trozos grandes. 
+                                    Disuelve 1/4 de taza de sal en 4 tazas de agua fría en un recipiente grande. 
+                                    Sumerge los trozos de col en la salmuera y déjalos reposar durante aproximadamente 1-2 horas, volteándolos ocasionalmente.
+                                
+                                </div>
+        
+                                <div class="w3-li ">
+                                    2- Mientras tanto, prepara la pasta de condimentos. 
+                                    Mezcla el jengibre rallado, el ajo picado, el azúcar y la pasta de pimiento rojo (gochugaru) en un tazón pequeño. 
+                                    Ajusta la cantidad de pasta de pimiento rojo según tu preferencia de picante.
+                                </div>
+        
+                                <div class="w3-li ">
+                                    3- Escurre la col china después de su tiempo de remojo y enjuágala con agua fría para eliminar el exceso de sal. 
+                                    Escúrrela bien y colócala en un tazón grande.
+                                </div>
+        
+                                <div class="w3-li ">
+                                    4- Agrega la pasta de condimentos preparada a la col china. 
+                                    Asegúrate de usar guantes para mezclar los ingredientes, ya que la pasta de pimiento rojo puede ser irritante para la piel.
+                                </div>
+        
+                                <div class="w3-li ">
+                                    5- Agrega las cebollas verdes cortadas en trozos y las zanahorias en tiras al tazón y mezcla todo muy bien, 
+                                    asegurándote de que la pasta de condimentos se distribuya uniformemente.
+                                </div>
+        
+                                <div class="w3-li ">
+                                    6- Transfiere la mezcla a frascos de vidrio limpios y presiona ligeramente para compactarla. 
+                                    Asegúrate de dejar espacio en la parte superior para la expansión durante la fermentación.
+                                </div>
+        
+                                <div class="w3-li ">
+                                    7- Cubre los frascos con sus tapas, pero no los cierres herméticamente. 
+                                    Deja los frascos en un lugar oscuro y fresco durante aproximadamente 1-5 días, 
+                                    dependiendo de tus preferencias de sabor y nivel de fermentación.
+                                </div>
+        
+                                <div class="w3-li ">
+                                    8- Una vez que el kimchi haya alcanzado el nivel deseado de fermentación, cierra herméticamente los frascos y refrigéralos. 
+                                    El kimchi seguirá desarrollando su sabor con el tiempo.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="w3-li ">
-                        3- Escurre la col china después de su tiempo de remojo y enjuágala con agua fría para eliminar el exceso de sal. 
-                        Escúrrela bien y colócala en un tazón grande.
-                    </div>
-
-                    <div class="w3-li ">
-                        4- Agrega la pasta de condimentos preparada a la col china. 
-                        Asegúrate de usar guantes para mezclar los ingredientes, ya que la pasta de pimiento rojo puede ser irritante para la piel.
-                    </div>
-
-                    <div class="w3-li ">
-                        5- Agrega las cebollas verdes cortadas en trozos y las zanahorias en tiras al tazón y mezcla todo muy bien, 
-                        asegurándote de que la pasta de condimentos se distribuya uniformemente.
-                    </div>
-
-                    <div class="w3-li ">
-                        6- Transfiere la mezcla a frascos de vidrio limpios y presiona ligeramente para compactarla. 
-                        Asegúrate de dejar espacio en la parte superior para la expansión durante la fermentación.
-                    </div>
-
-                    <div class="w3-li ">
-                        7- Cubre los frascos con sus tapas, pero no los cierres herméticamente. 
-                        Deja los frascos en un lugar oscuro y fresco durante aproximadamente 1-5 días, 
-                        dependiendo de tus preferencias de sabor y nivel de fermentación.
-                    </div>
-
-                    <div class="w3-li ">
-                        8- Una vez que el kimchi haya alcanzado el nivel deseado de fermentación, cierra herméticamente los frascos y refrigéralos. 
-                        El kimchi seguirá desarrollando su sabor con el tiempo.
+                    <div class="w3-row">
+                        <div class="w3-col m12 w3-center">
+                            <h2><a href="https://www.recetasgratis.net/receta-de-kimchi-coreano-tradicional-60776.html" class="w3-btn w3-ripple w3-hover-red w3-round-large w3-italic" target="_blank">Fuente de la receta</a></h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-col m12 w3-center">
-                <h2><a href="https://www.recetasgratis.net/receta-de-kimchi-coreano-tradicional-60776.html" class="w3-btn w3-ripple w3-hover-red w3-round-large w3-italic" target="_blank">Fuente de la receta</a></h2>
+        
+                <!-- ===================== RECETA DE TTEOKBOKKI =============================== -->
+                <div id="div-tteokbokki" class="w3-col m12 w3-center tabcontent">
+                    <div class="w3-row">
+                        <div class="w3-col m12 w3-center">
+                            <h2 class="w3-padding w3-card-4 w3-orange w3-bold w3-center w3-italic"><a name="receta2"> Tteokbokki </a></h2>
+        
+                        </div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
+                            <h3> Ingredientes </h3>
+                        </div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-col m6 w3-center">
+                            <img src="https://imag.bonviveur.com/servir-el-tteokbokki-con-huevo-cocido.jpg" class="w3-image w3-margin"/>
+                            <p class="w3-padding w3-card-4 w3-lightgray">
+                                Dato curioso: Originalmente, en los siglos pasados, el tteokbokki no se parecía en nada a la versión moderna que conocemos. 
+                                Antiguamente, el tteokbokki se preparaba hirviendo los tteok con otros ingredientes, como verduras y carne, en un caldo de sopa. 
+                                La versión picante y pegajosa que es popular en la actualidad se convirtió en el estándar en la década de 1950 en Seúl
+                            </p>
+                        </div>
+                        <div class="w3-col m6 w3-center">
+                            <div class="ingredientes w3-margin">
+                                <table class="w3-table w3-bordered w3-hoverable">
+                                    <thead>
+                                        <tr class="w3-orange">
+                                            <th>Ingredientes</th>
+                                            <th>Cantidad</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tazas de tteok (bolitas de arroz) - disponibles en tiendas asiáticas</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Taza de agua</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hoja de alga kombu (opcional, para dar sabor al caldo)</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zanahoria, cortada en tiras finas</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cebolla, cortada en tiras finas</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ramitas de cebolla verde, cortadas en trozos</td>
+                                            <td>2-3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Taza de col china, cortada en trozos</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fish cake (pastel de pescado) en rodajas finas (opcional)</td>
+                                            <td>200 gms</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cucharada de aceite vegetal</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Taza de pasta de pimiento rojo (gochujang)</td>
+                                            <td>1/4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cucharada de salsa de soja</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Taza de caldo de pescado o vegetal</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-row">
+        
+                        <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
+                            <h3> Preparación </h3>
+                        </div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-ul">
+                            <div class="w3-li "><br>
+                                1- En una olla grande, agrega el agua y la hoja de alga kombu y lleva a ebullición. 
+                                Si estás usando alga kombu, retírala después de unos minutos de hervor para dar sabor al caldo
+                            </div>
+        
+                            <div class="w3-li ">
+                                2- Agrega las bolitas de arroz (tteok) al caldo y cocínalas hasta que estén tiernas, siguiendo las instrucciones del paquete. 
+                                Escurre y reserva.
+                            </div>
+        
+                            <div class="w3-li ">
+                                3- En una sartén grande o wok, calienta el aceite vegetal a fuego medio. 
+                                Agrega la zanahoria y la cebolla, y saltea durante unos minutos hasta que estén tiernas.
+                            </div>
+        
+                            <div class="w3-li ">
+                                4- Agrega la pasta de pimiento rojo (gochujang), el azúcar, la salsa de soja, el ajo picado y el jengibre rallado. 
+                                Revuelve bien para combinar todos los ingredientes y cocínalos durante unos minutos hasta que la mezcla esté fragante.  
+                            </div>
+        
+                            <div class="w3-li ">
+                                5- Vierte el caldo de pescado o vegetal en la sartén y revuelve para combinar la salsa con el caldo. 
+                                Deja que la mezcla hierva suavemente durante unos minutos.    
+                            </div>
+        
+                            <div class="w3-li ">
+                                6- Agrega las bolitas de arroz cocidas, las tiras de col china, las rodajas de fish cake (si estás usando) y las ramitas de cebolla verde. 
+                                Cocina todo junto durante unos minutos hasta que los ingredientes estén bien cubiertos por la salsa y se hayan calentado completamente.
+                            </div>
+        
+                            <div class="w3-li ">
+                                7- Sirve el tteokbokki caliente en platos individuales, espolvoreado con semillas de sésamo tostado si lo deseas.
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="w3-row">
+                        <div class="w3-col m12 w3-center">
+                            <h2><a href="https://www.bonviveur.es/recetas/tteokbokki" class="w3-btn w3-ripple w3-hover-orange w3-round-large w3-italic" target="_blank">Fuente de la receta</a></h2>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
 
-    <!-- ===================== RECETA DE TTEOKBOKKI =============================== -->
-    <div class="w3-container w3-row-padding recipe-container" id="recipe_kimchi">
-        <div class="w3-row">
-            <div class="w3-col m12 w3-center">
-                <h2 class="w3-padding w3-card-4 w3-orange w3-bold w3-center w3-italic"><a name="receta2"> Tteokbokki </a></h2>
-
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
-                <h3> Ingredientes </h3>
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-col m6 w3-center">
-                <img src="https://imag.bonviveur.com/servir-el-tteokbokki-con-huevo-cocido.jpg" class="w3-image w3-margin"/>
-                <p class="w3-padding w3-card-4 w3-lightgray">
-                    Dato curioso: Originalmente, en los siglos pasados, el tteokbokki no se parecía en nada a la versión moderna que conocemos. 
-                    Antiguamente, el tteokbokki se preparaba hirviendo los tteok con otros ingredientes, como verduras y carne, en un caldo de sopa. 
-                    La versión picante y pegajosa que es popular en la actualidad se convirtió en el estándar en la década de 1950 en Seúl
-                </p>
-            </div>
-            <div class="w3-col m6 w3-center">
-                <div class="ingredientes w3-margin">
-                    <table class="w3-table w3-bordered w3-hoverable">
-                        <thead>
-                            <tr class="w3-orange">
-                                <th>Ingredientes</th>
-                                <th>Cantidad</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Tazas de tteok (bolitas de arroz) - disponibles en tiendas asiáticas</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Taza de agua</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Hoja de alga kombu (opcional, para dar sabor al caldo)</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Zanahoria, cortada en tiras finas</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Cebolla, cortada en tiras finas</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Ramitas de cebolla verde, cortadas en trozos</td>
-                                <td>2-3</td>
-                            </tr>
-                            <tr>
-                                <td>Taza de col china, cortada en trozos</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Fish cake (pastel de pescado) en rodajas finas (opcional)</td>
-                                <td>200 gms</td>
-                            </tr>
-                            <tr>
-                                <td>Cucharada de aceite vegetal</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Taza de pasta de pimiento rojo (gochujang)</td>
-                                <td>1/4</td>
-                            </tr>
-                            <tr>
-                                <td>Cucharada de salsa de soja</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Taza de caldo de pescado o vegetal</td>
-                                <td>1</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="w3-row">
-
-            <div class="w3-col m12 w3-center w3-padding w3-card-4 w3-black">
-                <h3> Preparación </h3>
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-ul">
-                <div class="w3-li "><br>
-                    1- En una olla grande, agrega el agua y la hoja de alga kombu y lleva a ebullición. 
-                    Si estás usando alga kombu, retírala después de unos minutos de hervor para dar sabor al caldo
-                </div>
-
-                <div class="w3-li ">
-                    2- Agrega las bolitas de arroz (tteok) al caldo y cocínalas hasta que estén tiernas, siguiendo las instrucciones del paquete. 
-                    Escurre y reserva.
-                </div>
-
-                <div class="w3-li ">
-                    3- En una sartén grande o wok, calienta el aceite vegetal a fuego medio. 
-                    Agrega la zanahoria y la cebolla, y saltea durante unos minutos hasta que estén tiernas.
-                </div>
-
-                <div class="w3-li ">
-                    4- Agrega la pasta de pimiento rojo (gochujang), el azúcar, la salsa de soja, el ajo picado y el jengibre rallado. 
-                    Revuelve bien para combinar todos los ingredientes y cocínalos durante unos minutos hasta que la mezcla esté fragante.  
-                </div>
-
-                <div class="w3-li ">
-                    5- Vierte el caldo de pescado o vegetal en la sartén y revuelve para combinar la salsa con el caldo. 
-                    Deja que la mezcla hierva suavemente durante unos minutos.    
-                </div>
-
-                <div class="w3-li ">
-                    6- Agrega las bolitas de arroz cocidas, las tiras de col china, las rodajas de fish cake (si estás usando) y las ramitas de cebolla verde. 
-                    Cocina todo junto durante unos minutos hasta que los ingredientes estén bien cubiertos por la salsa y se hayan calentado completamente.
-                </div>
-
-                <div class="w3-li ">
-                    7- Sirve el tteokbokki caliente en platos individuales, espolvoreado con semillas de sésamo tostado si lo deseas.
-                </div>
-
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-col m12 w3-center">
-                <h2><a href="https://www.bonviveur.es/recetas/tteokbokki" class="w3-btn w3-ripple w3-hover-orange w3-round-large w3-italic" target="_blank">Fuente de la receta</a></h2>
-            </div>
-        </div>
-    </div>
     <script src="funcionalidades.js"></script>
 </body>
 </html>
