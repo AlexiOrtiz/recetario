@@ -19,4 +19,22 @@ function showRecipe(recipe, button) {
     } else if (recipe === 'sopa-paraguaya') {
         content = "<h3>Sopa Paraguaya</h3><p>Aquí va la receta de la sopa paraguaya...</p>";
     }
+    document.getElementById("recipeContent").innerHTML = content;
+
+    // Remover la clase "active" de todos los botones de pestañas
+    var tabButtons = document.getElementsByClassName("tablink");
+    for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+    document.getElementById("recipeContent").innerHTML = content;
+
+    // Remover la clase "active" de todos los botones de pestañas
+    var tabButtons = document.getElementsByClassName("tablink");
+    for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+
+    // Agregar la clase "active" al botón de la pestaña seleccionada
+    button.classList.add("active");
+
 }
