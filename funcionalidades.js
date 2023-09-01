@@ -6,14 +6,17 @@ for (var i = 1; i < tabContents.length; i++) { // ocultar las demas
     tabContents[i].classList.add("hidden");
 }
 
-function showRecipe(recipeId) {
-    // Ocultar todas las pestañas de recetas
-    var recipeTabs = document.querySelectorAll('.recipe-tab');
-    recipeTabs.forEach(function(tab) {
-        tab.style.display = 'none';
-    });
+function showRecipe(recipe, button) {
 
-    // Mostrar la pestaña de la receta seleccionada
-    document.getElementById(recipeId).style.display = 'block';
+    // Remover la clase "active" de todos los botones de pestañas
+    for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+        tabContents[i].classList.add("hidden");
+    }
+
+    // Agregar la clase "active" al botón de la pestaña seleccionada
+    button.classList.add("active");
+    document.getElementById("div-"+recipe).classList.remove("hidden");
+
 }
 
