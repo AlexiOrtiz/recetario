@@ -43,6 +43,10 @@ img {
     padding: 20px;
 }
 
+/* .recipe-container{
+    display : none;
+} */
+
 * {
     font-size: 1rem!important;
 }

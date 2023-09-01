@@ -21,18 +21,17 @@ function showRecipe(recipe, button) {
     }
     document.getElementById("recipeContent").innerHTML = content;
 
-    // Remover la clase "active" de todos los botones de pestañas
-    var tabButtons = document.getElementsByClassName("tablink");
-    for (var i = 0; i < tabButtons.length; i++) {
-        tabButtons[i].classList.remove("active");
+    var kimchiContainer = document.getElementById('recipe_kimchi');
+    if (kimchiContainer) {
+        document.getElementById("recipeContent").innerHTML = kimchiContainer.innerHTML;
     }
-    document.getElementById("recipeContent").innerHTML = content;
 
     // Remover la clase "active" de todos los botones de pestañas
     var tabButtons = document.getElementsByClassName("tablink");
     for (var i = 0; i < tabButtons.length; i++) {
         tabButtons[i].classList.remove("active");
     }
+    document.getElementById("recipeContent").innerHTML = content;
 
     // Agregar la clase "active" al botón de la pestaña seleccionada
     button.classList.add("active");
