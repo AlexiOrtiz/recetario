@@ -87,15 +87,19 @@
             </div>
         </a>
     </div>
-    
-    <div class="w3-container"> <!-- Agregar un contenedor de W3.CSS -->
+
+    <div class="w3-container">
         <h1>RECETAS DE COMIDAS</h1>
         <h2>Recetas disponibles</h2>
-        <ul class="w3-ul" id="recipeTabs">
-            <li><a href="#" onclick="showRecipe('pizza')">Pizza</a></li>
-            <li><a href="#" onclick="showRecipe('ravioles')">Ravioles</a></li>
-            <li><a href="#" onclick="showRecipe('sopa-paraguaya')">Sopa Paraguaya</a></li>
-        </ul>
+        <div class="w3-bar w3-black" id="recipeTabs">
+            <button class="w3-bar-item w3-button tablink" onclick="showRecipe('pizza', this)">Pizza</button>
+            <button class="w3-bar-item w3-button tablink" onclick="showRecipe('ravioles', this)">Ravioles</button>
+            <button class="w3-bar-item w3-button tablink" onclick="showRecipe('sopa-paraguaya', this)">Sopa Paraguaya</button>
+        </div>
+        
+        <div class="w3-container w3-border" id="recipeContent">
+            <!-- Contenido de las recetas se mostrará aquí -->
+        </div>
     </div>
 
     <div class="w3-container w3-row-padding"> <!-- Agregar un contenedor y clases para el diseño responsive -->
